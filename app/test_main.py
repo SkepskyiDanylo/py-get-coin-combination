@@ -17,7 +17,9 @@ class TestCoinCombination:
             (50, [0, 0, 0, 2])
         ]
     )
-    def test_correct_type_of_coins(self, coins: int, expected_result: list[int]) -> None:
+    def test_correct_type_of_coins(self,
+                                   coins: int,
+                                   expected_result: list[int]) -> None:
         assert get_coin_combination(coins) == expected_result
 
     @pytest.mark.parametrize(
